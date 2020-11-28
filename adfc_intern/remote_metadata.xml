@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://auth.adfc-intern.de/simplesamlphp/saml2/idp/metadata.php">
+  <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIFPTCCBCWgAwIBAgIBAzANBgkqhkiG9w0BAQsFADCBwTELMAkGA1UEBhMCREUxCzAJBgNVBAgTAkRFMQswCQYDVQQHEwJERTENMAsGA1UEChMEQURGQzEqMCgGA1UECxMhQWxsZ2VtZWluZXIgZGV1dHNjaGVyIEZhaHJyYWRjbHViMTowOAYDVQQDEzFVbml2ZW50aW9uIENvcnBvcmF0ZSBTZXJ2ZXIgUm9vdCBDQSAoSUQ9YWpPZWJydngpMSEwHwYJKoZIhvcNAQkBFhJzc2xAYWRmYy1pbnRlcm4uZGUwHhcNMjAwNDE4MTYyOTE1WhcNMjUwNDE3MTYyOTE1WjCBozELMAkGA1UEBhMCREUxCzAJBgNVBAgTAkRFMQswCQYDVQQHEwJERTENMAsGA1UEChMEQURGQzEqMCgGA1UECxMhQWxsZ2VtZWluZXIgZGV1dHNjaGVyIEZhaHJyYWRjbHViMRwwGgYDVQQDExNhdXRoLmFkZmMtaW50ZXJuLmRlMSEwHwYJKoZIhvcNAQkBFhJzc2xAYWRmYy1pbnRlcm4uZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDUQHWt1fYFk1ZAp4mtI2FYwiCtZLm0snMWzMm13UCOM5BK0ZVd7w8ijDF8Us7QqCpIpHNu90n53eA/vvpPAi+ysMpGRmXSiJF+G0MqukkLHB96V8CDF5VZtfCtBxo4VhA4wYfl88GVuqekgw78XuPhQd0ddzUn8WP5IpU0WE+ZZ4ZdicjTP9D6SZG6GMrRd8RZxD5kLhlVHlC499gK8jdBaHHnmj9sUbm6VN3yL3k6+Q4w3At+0S1YJs2iLtH9XIAEsk3QTK1Poh0pLKj/7xdwzAv/Ngpiaer3ygmWNyzkOufxfMUWggT68bbo1bhrvSuEbLmQchDFqNVBTLzHXjI9AgMBAAGjggFaMIIBVjAJBgNVHRMEAjAAMB0GA1UdDgQWBBS6Rksg3GDkthe8RuYcze+Jk3UXFzCB9gYDVR0jBIHuMIHrgBRgeKxWAZRbvJI6iNuFdoiwK34+MaGBx6SBxDCBwTELMAkGA1UEBhMCREUxCzAJBgNVBAgTAkRFMQswCQYDVQQHEwJERTENMAsGA1UEChMEQURGQzEqMCgGA1UECxMhQWxsZ2VtZWluZXIgZGV1dHNjaGVyIEZhaHJyYWRjbHViMTowOAYDVQQDEzFVbml2ZW50aW9uIENvcnBvcmF0ZSBTZXJ2ZXIgUm9vdCBDQSAoSUQ9YWpPZWJydngpMSEwHwYJKoZIhvcNAQkBFhJzc2xAYWRmYy1pbnRlcm4uZGWCCQDae722fXcWrjALBgNVHQ8EBAMCBeAwJAYDVR0RBB0wG4ITYXV0aC5hZGZjLWludGVybi5kZYIEYXV0aDANBgkqhkiG9w0BAQsFAAOCAQEAC87LEgyLPqBDUXvHC/UAF0/HztvKqcJIXil3MKZ5+E+/xgfJ0qTKBZKfDkoY6RzDeG/VJdYY1J/bhSEJsnJ/dm/4hGS6E+kmSRcMbJ/LBr0ruXqx5lCK0py99fSPoQdDpap4OWnSBPEXz1/fjbHM4EdzZ9RNWndUpBXUe0O7zwXSDo+6umu+sD0/aOr3FB6V7fbnBtOOFh7DOF2ghhYE8RuAhVN1M10ROEWzdJ3RhRUTu/4u4KXAHj/Ze3VQvafsrSdXgJDLTzh+nEUaVCS1XGZnIwoktsEV/dqjHLOxOaUP7f5Jxl2P3NUv10pBjtGHRftYleEeLnEkAjPosKaJUg==</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIFPTCCBCWgAwIBAgIBAzANBgkqhkiG9w0BAQsFADCBwTELMAkGA1UEBhMCREUxCzAJBgNVBAgTAkRFMQswCQYDVQQHEwJERTENMAsGA1UEChMEQURGQzEqMCgGA1UECxMhQWxsZ2VtZWluZXIgZGV1dHNjaGVyIEZhaHJyYWRjbHViMTowOAYDVQQDEzFVbml2ZW50aW9uIENvcnBvcmF0ZSBTZXJ2ZXIgUm9vdCBDQSAoSUQ9YWpPZWJydngpMSEwHwYJKoZIhvcNAQkBFhJzc2xAYWRmYy1pbnRlcm4uZGUwHhcNMjAwNDE4MTYyOTE1WhcNMjUwNDE3MTYyOTE1WjCBozELMAkGA1UEBhMCREUxCzAJBgNVBAgTAkRFMQswCQYDVQQHEwJERTENMAsGA1UEChMEQURGQzEqMCgGA1UECxMhQWxsZ2VtZWluZXIgZGV1dHNjaGVyIEZhaHJyYWRjbHViMRwwGgYDVQQDExNhdXRoLmFkZmMtaW50ZXJuLmRlMSEwHwYJKoZIhvcNAQkBFhJzc2xAYWRmYy1pbnRlcm4uZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDUQHWt1fYFk1ZAp4mtI2FYwiCtZLm0snMWzMm13UCOM5BK0ZVd7w8ijDF8Us7QqCpIpHNu90n53eA/vvpPAi+ysMpGRmXSiJF+G0MqukkLHB96V8CDF5VZtfCtBxo4VhA4wYfl88GVuqekgw78XuPhQd0ddzUn8WP5IpU0WE+ZZ4ZdicjTP9D6SZG6GMrRd8RZxD5kLhlVHlC499gK8jdBaHHnmj9sUbm6VN3yL3k6+Q4w3At+0S1YJs2iLtH9XIAEsk3QTK1Poh0pLKj/7xdwzAv/Ngpiaer3ygmWNyzkOufxfMUWggT68bbo1bhrvSuEbLmQchDFqNVBTLzHXjI9AgMBAAGjggFaMIIBVjAJBgNVHRMEAjAAMB0GA1UdDgQWBBS6Rksg3GDkthe8RuYcze+Jk3UXFzCB9gYDVR0jBIHuMIHrgBRgeKxWAZRbvJI6iNuFdoiwK34+MaGBx6SBxDCBwTELMAkGA1UEBhMCREUxCzAJBgNVBAgTAkRFMQswCQYDVQQHEwJERTENMAsGA1UEChMEQURGQzEqMCgGA1UECxMhQWxsZ2VtZWluZXIgZGV1dHNjaGVyIEZhaHJyYWRjbHViMTowOAYDVQQDEzFVbml2ZW50aW9uIENvcnBvcmF0ZSBTZXJ2ZXIgUm9vdCBDQSAoSUQ9YWpPZWJydngpMSEwHwYJKoZIhvcNAQkBFhJzc2xAYWRmYy1pbnRlcm4uZGWCCQDae722fXcWrjALBgNVHQ8EBAMCBeAwJAYDVR0RBB0wG4ITYXV0aC5hZGZjLWludGVybi5kZYIEYXV0aDANBgkqhkiG9w0BAQsFAAOCAQEAC87LEgyLPqBDUXvHC/UAF0/HztvKqcJIXil3MKZ5+E+/xgfJ0qTKBZKfDkoY6RzDeG/VJdYY1J/bhSEJsnJ/dm/4hGS6E+kmSRcMbJ/LBr0ruXqx5lCK0py99fSPoQdDpap4OWnSBPEXz1/fjbHM4EdzZ9RNWndUpBXUe0O7zwXSDo+6umu+sD0/aOr3FB6V7fbnBtOOFh7DOF2ghhYE8RuAhVN1M10ROEWzdJ3RhRUTu/4u4KXAHj/Ze3VQvafsrSdXgJDLTzh+nEUaVCS1XGZnIwoktsEV/dqjHLOxOaUP7f5Jxl2P3NUv10pBjtGHRftYleEeLnEkAjPosKaJUg==</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.adfc-intern.de/simplesamlphp/saml2/idp/SingleLogoutService.php"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth.adfc-intern.de/simplesamlphp/saml2/idp/SSOService.php"/>
+  </md:IDPSSODescriptor>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>Administrator</md:GivenName>
+    <md:EmailAddress>root@int-master.adfc-intern.de</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>
