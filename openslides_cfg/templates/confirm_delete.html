@@ -1,0 +1,36 @@
+{% extends '_base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+{% load django_tables2 %}
+
+
+
+{% block content %}
+<div class="row">
+    <div class="col px-5">
+        <form method="POST">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        Bitte löschen bestätigen.
+                    </div>
+                    <div class="modal-body">
+                        Soll die OpenSlides Instanz: <b>{{ object.name_text }}</b>  wirklich gelöscht werden?
+                    </div>
+                    <div class="modal-footer">
+            <!-- Security token by Django -->
+            {% csrf_token %}
+
+                            <button type="submit" class="btn btn-danger">JA LÖSCHEN</button>
+                            <a href="/"  class="btn btn-secondary">Abbrechen</a>
+
+
+    </div>
+</div>
+</div>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}
