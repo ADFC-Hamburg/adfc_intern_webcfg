@@ -3,3 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 db.sqlite3
+database_backup.sqlite
+myvenv/
+openslides_cfg/static/node_modules/
+openslides_cfg/static/package-lock.json

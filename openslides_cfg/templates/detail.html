@@ -4,9 +4,7 @@
 {% load crispy_forms_tags %}
 {% load django_tables2 %}
 
-{% block anlegen_active %}
-    active
-{% endblock %}
+{% block anlegen_active %}active{% endblock %}
 
 
 {% block content %}
@@ -21,28 +19,60 @@
 
     <div class="row">
         <div class="col">
-            <form id="Aufgabe_create" action="" method="post">
+            <form id="Openslides_create" action="" method="post" class="main flex-column d-flex">
                 {% csrf_token %}
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row mx-2 mt-2">
-                                        <div class="col">
-                                            {{ form.name_text | as_crispy_field }}
+                <div class="container-fluid d-flex flex-column overflow-auto">
+                                        <div class="row">
+                                            <div class="col col-md">
+                                                {{ form.name_text | as_crispy_field }}
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row mx-2 mt-2">
-                                        <div class="col">
-                                            {{ form.meet_room | as_crispy_field }}
+                                        <div class="row">
+                                            <div class="col col-md">
+                                                {{ form.meet_room | as_crispy_field }}
+                                            </div>
+                                             <div class="col col-md">
+                                                {{ form.meet_password | as_crispy_field }}
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+
+                                        <div class="row">
+                                            <div class="col col-md">
+                                                {{ form.reset_password_verbose | as_crispy_field }}
+                                            </div>
+                                            <div class="col col-md">
+                                                {{ form.enable_electronic_voting | as_crispy_field }}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-md-4">
+                                            {{ form.email_server | as_crispy_field }}
+                                            </div>
+                                            <div class="col col-sm-3">
+                                                {{ form.email_server_port | as_crispy_field }}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-lg">
+                                                {{ form.email_username | as_crispy_field }}
+                                            </div>
+                                            <div class="col col-md">
+                                                {{ form.email_password | as_crispy_field }}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-lg">
+                                                {{ form.email_default_from| as_crispy_field }}
+                                            </div>
+                                            <div class="col col-lg">
+                                                {{ form.admin_email| as_crispy_field }}
+                                            </div>
+                                            <div class="col col-md">
+                                                {{ form.install_status| as_crispy_field }}
+                                            </div>
                                         </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Aktions Buttons -->
