@@ -20,3 +20,6 @@ h3 {
     font-size: 1.50rem;
 }
 
+.modal-backdrop {
+    z-index: 1020!important;
+}
